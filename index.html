@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="style.css">
+   <script src='script.js' defer></script>
+    <title>Etch-A-Sketch</title>
+</head>
+<body>
+
+    <!--main body withh all the tools-->
+
+    <h1>Etch-A-Sketch</h1>
+    <div class="header">
+        <input id="colorPicker" type="color" value="#333333" />
+        <button id="colorBtn" onclick=" colorMode()">Color Mode</button>
+        <button id="rainBowBtn" onclick="rainbowMode()">Rainbow Mode</button>
+        <button id="eraserBtn" onclick="eraseGrid()">Eraser</button>
+        <button id="clearBtn" onclick="removeGrid()">Clear</button>
+        <div id="sizeValue" class="size-value">16 x 16</div>
+        <input id="sizeSlider" type="range" value="16" min="1" max="64" />
+    </div>
+
+    <div class="board"></div>
+ 
+</body>
+</html>
